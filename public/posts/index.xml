@@ -14,9 +14,18 @@
             <pubDate>Tue, 13 Aug 2019 22:55:50 +0200</pubDate>
             
             <guid>/posts/helloworld/</guid>
-            <description>This is our first post. Stay tuned for more!</description>
-            <content type="html"><![CDATA[<p>This is our first post.
-Stay tuned for more!</p>
+            <description>So we just started our own blog where we will post all sort of cool security related articles.
+What is sharkzwithlazers you might ask? We are a bunch of security enthusiasts comming from different fields of the IT community. Together we play CTF´s and other security challenges.
+Curious? Join us on our TS3 at sharkzwithlazers.pizza</description>
+            <content type="html"><![CDATA[
+
+<p>So we just started our own blog where we will post all sort of cool security related articles.</p>
+
+<h4 id="what-is-sharkzwithlazers-you-might-ask">What is sharkzwithlazers you might ask?</h4>
+
+<p>We are a bunch of security enthusiasts comming from different fields of the IT community.
+Together we play CTF´s and other security challenges.<br />
+Curious? Join us on our TS3 at <code>sharkzwithlazers.pizza</code></p>
 ]]></content>
         </item>
         
