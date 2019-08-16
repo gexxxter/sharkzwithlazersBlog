@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "hello-friend"
+theme = "hello-friend-ng"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -9,8 +9,8 @@ theme = "hello-friend"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Homepage and blog by Djordje Atlialp"
-  keywords = "homepage, blog, science, informatics, development, programming"
+  description = "Blog of Sharkzwithlazers"
+  keywords = "blog, Sharkzwithlazers"
   images = [""]
 
   # Directory name of your blog content (default is `content/posts`)
@@ -23,6 +23,7 @@ theme = "hello-friend"
     title = "Sharkzwithlazers"
     subtitle = "PEW PEW"
     keywords = ""
+    writtenBy = "Written by"
     copyright = ""
     readOtherPosts = "Read other posts"
 
