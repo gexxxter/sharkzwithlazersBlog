@@ -14,9 +14,9 @@ Secretus was a pure Web challenge which presented us with a minimal form.
 The form did actually have no purpose as there were no handlers executed upon clicking the button or
 doing anything else, such as making a handstand while looking at the form. So after searching for
 a quite embarassing time for the secret feature of the button or how to fix the broken form, we figured out that there were to
-more endpoints from interest: **/secrets** and **/debug**.
+more endpoints from interest: **/secret** and **/debug**.
 
-Visiting **/secrets** presents us with the following error message: `{"error":"INVALID_API_KEY"}`.
+Visiting **/secret** presents us with the following error message: `{"error":"INVALID_API_KEY"}`.
 First, we only googled for the error message itself or parts of it 
 and did therefore not find the correct example page with the used code.
 So some time went by with the first page, again... before looking for the complete json message 
@@ -31,7 +31,7 @@ req.challenge = req.get('Authorization');
 req.authenticated = req.authentication === 'secret';
 ```
 
-So, if we set the header `Authorization: secret` we should be able to visit the **/secrets** endpoint:
+So, if we set the header `Authorization: secret` we should be able to visit the **/secret** endpoint:
 
 ![Secretus Valid Auth Header](/img/ins20_secretus2.png)
 
@@ -108,7 +108,7 @@ return `s:LRTM70yfO-cQ4ikmDBZoLa_WwSnX82te.CsRwKt7H4uL4nGe4fH/0ATRfclH9E5GhhZxVB
 s:LRTM70yfO-cQ4ikmDBZoLa_WwSnX82te.CsRwKt7H4uL4nGe4fH/0ATRfclH9E5GhhZxVB1ufa5k
 ```
 
-Now we can forge all existing session with the following steps:
+Now we can forge all existing sessions with the following steps:
 
 1. Visit **/debug** and extract the list of all sessions.
 2. Create valid session cookies for each extracted session.
