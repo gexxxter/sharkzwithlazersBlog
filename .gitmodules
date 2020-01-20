@@ -1,3 +1,3 @@
 [submodule "themes/hello-friend-sharkz"]
 	path = themes/hello-friend-sharkz
-	url = git@github.com:gexxxter/hugo-theme-hello-friend-ng.git
+	url = https://github.com/gexxxter/hugo-theme-hello-friend-ng.git
