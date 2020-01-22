@@ -47,7 +47,7 @@ The decoded parts are as follows:
   "iat": 1579647240
 }
 ```
-``"unique_name": "69a96f63-cc31-4a42-bcf8-03b3e9705428"``: This seems to be a unique id generated for the registered user by the application. This will 
+``"unique_name": "69a96f63-cc31-4a42-bcf8-03b3e9705428"``: This seems to be a unique id generated for the registered user by the application. This will be important later.
 
 ``"role": "User"``: A role assigned to the registered user. 
 
