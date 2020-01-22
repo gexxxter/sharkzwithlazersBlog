@@ -136,7 +136,7 @@ The generated JWK can be seen below and also downloaded [here](/docs/sharkz.jwk)
 }
 ```
 Next we saved the created JWK to a file and uploaded it to the filemanager and used the publish funtion to make it publicly available.
-Once uploaded we changed ``jku`` to point to out uploaded JWK.
+Once uploaded we changed ``jku`` to point to our uploaded JWK.
 ```
 {
   "alg": "RS256",
