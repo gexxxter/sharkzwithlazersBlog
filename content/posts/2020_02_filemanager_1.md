@@ -11,13 +11,13 @@ Dont trust user suppplied data, don´t screw up your jwt validation.
 The Ino Filemanager lets us, after registration, upload files and make them publicly available. 
 
 After registering an user and logging in, we observed that we were issued a JSON Web Token (*JWT*).
-The JWT will be stored in the local storage of the used browser.
+The JWT will be stored in the local storage of the used browser and it will be transmitted with every request to the server.
 
 ```
 {"Id":0,"Guid":"69a96f63-cc31-4a42-bcf8-03b3e9705428","Username":"SlaxXx","Password":null,"Token":"eyJhbGciOiJSUzI1NiIsImtpZCI6Imluc28yMCIsInR5cCI6IkpXVCIsImprdSI6Imh0dHBzOi8vZmlsZW1hbmFnZXIuaW5zb21uaWhhY2suY2gvandrLmpzb24ifQ.eyJ1bmlxdWVfbmFtZSI6IjY5YTk2ZjYzLWNjMzEtNGE0Mi1iY2Y4LTAzYjNlOTcwNTQyOCIsInJvbGUiOiJVc2VyIiwibmJmIjoxNTc5NjQ3MjQwLCJleHAiOjE1ODAyNTIwNDAsImlhdCI6MTU3OTY0NzI0MH0.aqEGHdNOaw-qcToTQkqdTvws2boYydo7wZVYJPWzjcvbEzWslsHUlyBD2yHdPj3iyPfc2p3KpTDfCRMRNoTjSyx7n6s-2N143fZ22EuD7kaSgGOuFbqs3SD0_Ot7LzVcwYJfVCUFiFC5Xw4gcwnuSraCp9x0gNtdEJCzDN5weMvH1qy6bBnm3wGDvfWBxXqho2hAqO5bOAqyBf_jZK0JKUvchQ62jEKMjcK97qBSfEY_RTAwVJYHvyspajvfbep9RWnW0rOqX22FsxHp0uJfK9WUiQFYGMl9Fal3I49qD4Cd42sLZ3ncD0IFepKDSxb5gGhf5fa3ZfPOmwOKTbKsPw","Role":"User"}
 ```
 We decoded the JWT with the help of [jwt.io](https://jwt.io).
-For more informations about JSON Web Tokens visit [JWT instruction](https://jwt.io/introduction/) or the offical [RFC](https://tools.ietf.org/html/rfc7519#section-4.1.4).
+For more informations about JSON Web Tokens visit [JWT introduction](https://jwt.io/introduction/) or the offical [RFC](https://tools.ietf.org/html/rfc7519#section-4.1.4).
 The decoded parts are as follows:
 
 ## Header
@@ -108,7 +108,8 @@ The previously received id ``7db3bf68-f007-445c-8f42-c3802ec39738`` is now used 
 Besides uploading and viewing files it is also possible to make files publicly available.
 After ticking the *public* checkbox a publicly available url is generated where everyone can access the uploaded file.
 ![set public](/img/public.jpg)
+# TODO public LINK 
 Enough informations lets get hacking.
 
-# Exploit time
+# Exploit
 ![letsGo](/img/letsgo.png)
