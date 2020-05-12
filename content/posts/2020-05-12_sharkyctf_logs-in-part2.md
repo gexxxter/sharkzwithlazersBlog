@@ -36,7 +36,7 @@ This was trivially validated by `POST`ing against `/e48e13207341b6bffb7fb1622282
 
 Our first reflex was to test for SQL injection, which turned out to be the right choice. Providing the value `PUT' or 1=1; -- ` resulted in all log entries being displayed:
 
-![Logs with modified method](/img/2020-05-12_sharkyctf_logs-in-part2_logs-sqli.png)
+![SQL injection proof of concept](/img/2020-05-12_sharkyctf_logs-in-part2_logs-sqli.png)
 
 We ended up exploiting this as a blind boolean based SQLi, where responses with the log entry ID `15` 
 (the ID of one of the PUT log entries) would be considered `true`. sqlmap did the remaining work for us:
